@@ -33,7 +33,7 @@ func printGermanLotto(){
         for j in lottoArrayOptional{
             lottoArrayUnwrapped.append(j!)
         }
-        GermanLottoHelper(2, lottoArrayUnwrapped)
+        GermanLottoHelper(6, lottoArrayUnwrapped)
         print()
     }
 }

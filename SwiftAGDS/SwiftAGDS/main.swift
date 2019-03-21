@@ -13,8 +13,16 @@ import Foundation
 //printSystemFileCrawler("/Users/thongnguyen/IdeaProjects", &number, &numberOfFiles)
 //print("\(number - numberOfFiles) directories, \(numberOfFiles) files")
 
-var arr = [1, 2, 3, 4, 5, 6, 7]
-printCombinationsWithoutRepetitionFrom(arr, 6)
+//var arr = [1, 2, 3, 4, 5, 6, 7]
+//printCombinationsWithoutRepetitionFrom(arr, 6)
 //printPermutation("thong")
+//storedInAdjacencyListBFS()
 
+//var board = Board.init(size: 22)
+//var FLAG: Bool = false
+//solveQueens(&board, 0, &FLAG)
+//print(countQueens)
 
+//cyclicPermutation()
+//townProblemOutput()
+repeatingSequence()
