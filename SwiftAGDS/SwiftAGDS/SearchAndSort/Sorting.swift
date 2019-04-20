@@ -125,3 +125,23 @@ func partition(_ arr: inout [Int],_ start:Int,_ end:Int) -> Int{
     arr.swapAt(end, pivot_i)
     return pivot_i
 }
+
+func topologicalSort(_ adjList: [[Int]],_ indegrees: inout [Int]) {
+    var queue = Queue<Int>()
+    for i in 1...indegrees.count - 1 {
+        if indegrees[i] == 0 {
+            queue.enqueue(i)
+        }
+    }
+
+    for _ in 1...adjList.count - 1 {
+        let x = queue.dequeue()!
+        print(x)
+        for i in adjList[x] {
+            indegrees[i] -= 1
+            if indegrees[i] == 0 {
+                queue.enqueue(i)
+            }
+        }
+    }
+}
