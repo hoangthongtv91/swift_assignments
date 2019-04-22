@@ -79,4 +79,6 @@ import Foundation
 //
 //print(rob([1,2,3,1]))
 
-print(addDigits(99))
+//print(addDigits(99))
+buildingPalindromes()
+
